@@ -1,0 +1,15 @@
+@import "./utils/_variables";
+@import "./base/base";
+
+img {  
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{   
+    footer {
+        width: 100%;
+        background: $colour-footer;
+    }
+}
