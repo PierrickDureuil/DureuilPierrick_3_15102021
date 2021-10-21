@@ -1,15 +1,78 @@
 @import "./utils/_variables";
 @import "./base/base";
+@import "./Layout/footer";
 
 img {  
     width: 100px;
     height: 100px;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px)
-{   
-    footer {
-        width: 100%;
-        background: $colour-footer;
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+
+        &__title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        
+            &--logo{
+                width: 180px;
+                height: auto;
+            }
+            
+        }
+
+        &__spot{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            padding: 4% ;
+            background: rgb(234, 234, 234);
+            box-shadow: inset 0px 2px 5px rgb(0 0 0 /25%);
+            box-sizing: border-box;
+
+            &--logo{
+                padding-right: 5%;
+                font-size: 80%;
+            }
+        }
+
+        &__text {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            
+            align-items: center;
+            padding: 35px 0px;
+            background: rgb(246, 246, 246);
+            width: 100%;
+            height: 300px;
+
+            &--entitled {
+                text-align: center;
+                font-weight: bold;
+                line-height: 1.5rem;
+                font-size: 130%;
+                width: 60%;
+            }
+
+            &--content {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 70px;
+                width: 85%;
+            }
+            
+            &--btn a{
+                background: linear-gradient(0deg, $colour-primary, $colour-secondary);
+                color: white;
+                padding: 15px 20px;
+                border-radius: 40px;
+            }
+        }
     }
 }

@@ -1,21 +1,154 @@
-a {
-  color: black;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
   text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-  margin: 0;
+  line-height: 1;
 }
 
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 6% 0% 6% 10%;
+    background: #353535;
+    color: white;
+  }
+  .footer h2 {
+    font-size: 120%;
+    font-family: "Shrikhand", cursive;
+    font-weight: normal;
+    margin-bottom: 5%;
+  }
+  .footer a {
+    color: white;
+    font-size: 90%;
+  }
+  .footer--link {
+    line-height: 1.5rem;
+    display: flex;
+  }
+  .footer .fa-utensils:before {
+    font-size: 80%;
+  }
+  .footer .fa-hands-helping:before {
+    font-size: 70%;
+  }
+  .footer i {
+    width: 1.2rem;
+  }
+}
 img {
   width: 100px;
   height: 100px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  footer {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__title {
     width: 100%;
-    background: #353535;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .header__title--logo {
+    width: 180px;
+    height: auto;
+  }
+  .header__spot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    background: #eaeaea;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+  }
+  .header__spot--logo {
+    padding-right: 5%;
+    font-size: 80%;
+  }
+  .header__text {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0px;
+    background: #f6f6f6;
+    width: 100%;
+    height: 300px;
+  }
+  .header__text--entitled {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 130%;
+    width: 60%;
+  }
+  .header__text--content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    width: 85%;
+  }
+  .header__text--btn a {
+    background: linear-gradient(0deg, #9356dc, #ff79da);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 40px;
   }
 }
 
