@@ -25,6 +25,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	font-family: 'Roboto', sans-serif;
 }
+
+h3 {
+	font-weight: bold;
+	font-size: 105%;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -49,3 +54,7 @@ table {
 	border-spacing: 0;
 }
 
+.standard-title {
+	font-size: 130%;
+	font-weight: bold;
+}
