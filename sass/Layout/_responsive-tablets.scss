@@ -1,0 +1,153 @@
+@media only screen and (min-device-width : 651px) and (max-device-width : 1024px) {
+    
+    //Home Page//
+    .header__spot{
+        padding: 2%;
+    }
+    .header__text {
+        height: auto;
+
+        &--content {
+            padding-bottom: 40px;
+        }
+    }
+
+    .working {
+        height: 320px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        &__list {
+            box-sizing: border-box;
+            align-items: flex-start;
+            margin-left: 80px;
+    
+            &--puce {
+                width: 380px;
+                
+                span {
+                    left: 90px;
+                }
+            }
+        }
+
+    }
+   
+    .nav {
+        height: 650px;
+        padding-top: 20px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+
+    .standard-title {
+        text-align: center;
+    }
+    .nav-pannel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 600px;
+        
+
+        &__card {
+            width: 40%;
+        }
+    }
+    
+    // Menu Page
+
+    .menu-header {
+        height: 450px;
+
+        &__viewmenu {
+            height: 420px;
+            object-position: 50% 65%;
+        }
+    }
+
+    .menu__3-course {
+        align-items: center;
+
+        &--title {
+            width: auto;
+    
+        }
+
+        &--info {
+            width: 60%;
+        }
+    }
+    
+
+}
+
+@media only screen and (min-device-width : 500px) and (max-device-width : 650px) {
+     //Home Page//
+     .header__spot{
+        padding: 2%;
+    }
+    .header__text {
+        height: auto;
+
+        &--content {
+            padding-bottom: 40px;
+        }
+    }
+
+    .working {
+        height: 320px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        &__list {
+            box-sizing: border-box;
+            align-items: flex-start;
+            margin-left: 80px;
+    
+            &--puce {
+                width: 380px;
+                
+                span {
+                    left: 90px;
+                }
+            }
+        }
+
+    }
+    
+    // Menu Page
+
+     .menu-header {
+        height: 450px;
+
+        &__viewmenu {
+            height: 420px;
+            object-position: 50% 65%;
+        }
+    }
+
+    .menu__3-course {
+        align-items: center;
+
+        &--title {
+            width: auto;
+    
+        }
+
+        &--info {
+            width: 80%;
+        }
+    }
+
+    .nav-pannel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        
+
+        &__card {
+            width: 70%;
+        }
+    }
+}
