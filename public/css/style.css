@@ -111,7 +111,7 @@ table {
   }
   .header__title--logo {
     width: 180px;
-    height: auto;
+    height: 31px;
   }
   .header__spot {
     display: flex;
@@ -154,6 +154,35 @@ table {
     color: white;
     padding: 15px 20px;
     border-radius: 40px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .menu-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+  .menu-header__title {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px 10px 20px;
+    height: auto;
+    width: 100%;
+  }
+  .menu-header__title i {
+    position: relative;
+    right: 60px;
+    font-size: 120%;
+    color: #313131;
+  }
+  .menu-header__viewmenu {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -270,6 +299,84 @@ table {
     font-size: 110%;
     color: #837b7b;
   }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    padding: 30px 20px 0px 20px;
+    background: #f6f6f6;
+    border-radius: 30px;
+    background-color: white;
+    width: auto;
+  }
+  .menu__title {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  .menu__title--title {
+    font-family: "Shrikhand", cursive;
+    font-size: 140%;
+  }
+  .menu__title--fav {
+    font-size: 110%;
+    text-align: center;
+    padding-top: 2.5px;
+    color: rgba(128, 128, 128, 0.719);
+  }
+  .menu__3-course {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .menu__3-course--title {
+    padding-bottom: 7px;
+    width: 12%;
+    border-bottom: solid 3px #99e2D0;
+  }
+  .menu__3-course--info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+    padding: 12px;
+    line-height: 25px;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  }
+  .menu__3-course--info strong {
+    font-weight: bold;
+  }
+  .menu__3-course--info span {
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 85%;
+  }
+  .menu__btn {
+    text-align: center;
+    padding: 40px 0px 80px 0px;
+  }
+  .menu__btn a {
+    background: linear-gradient(0deg, #9356dc, #ff79da);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 40px;
+  }
+}
+img {
+  height: 100px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
