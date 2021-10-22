@@ -23,10 +23,6 @@
     
             &--puce {
                 width: 380px;
-                
-                span {
-                    left: 90px;
-                }
             }
         }
 
@@ -82,6 +78,8 @@
 
 }
 
+
+
 @media only screen and (min-device-width : 500px) and (max-device-width : 650px) {
      //Home Page//
      .header__spot{
@@ -106,10 +104,6 @@
     
             &--puce {
                 width: 380px;
-                
-                span {
-                    left: 90px;
-                }
             }
         }
 

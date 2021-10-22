@@ -1,0 +1,88 @@
+
+
+@media only screen and (min-device-width : 1025px) {
+
+    // Home Page //
+    .header {
+
+        &__spot {
+
+            padding: 2%;
+        }
+
+        &__text {
+            height: auto;
+        }
+
+        
+    }
+
+    .working {
+        height: auto;
+       
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+            &--puce {
+                width: 25%;
+            }
+        }
+    }
+
+    .nav {
+        height: auto;
+        padding: 30px 20px 50px 20px;
+    }
+    .nav-pannel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+        
+        &__card {
+            width: 28%;
+        }
+    }
+
+    .footer {
+        padding: 2% 0% 2% 6%;
+
+        &--link {
+            line-height: 2rem;
+        }
+        h2 {
+            margin-bottom: 2%;
+        }
+    }
+
+    //Menu Page//
+
+    .menu-header {
+
+        height: 300px;
+        &__viewmenu {
+
+            height: 270px;
+        }
+
+    }
+
+    .menu {
+
+        &__pannel {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__3-course {
+            width: 30%;
+        }
+    }
+
+
+
+}

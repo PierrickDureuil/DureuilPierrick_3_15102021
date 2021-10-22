@@ -201,6 +201,7 @@ table {
 .working__list--puce {
   display: flex;
   box-sizing: border-box;
+  position: relative;
   flex-direction: row;
   align-items: center;
   padding: 0px 0px 0px 35px;
@@ -214,7 +215,7 @@ table {
   display: flex;
   color: white;
   position: absolute;
-  left: 10px;
+  left: -10px;
   justify-content: center;
   align-items: center;
   background-color: #9356dc;
@@ -394,9 +395,6 @@ table {
   .working__list--puce {
     width: 380px;
   }
-  .working__list--puce span {
-    left: 90px;
-  }
 
   .nav {
     height: 650px;
@@ -463,9 +461,6 @@ table {
   .working__list--puce {
     width: 380px;
   }
-  .working__list--puce span {
-    left: 90px;
-  }
 
   .menu-header {
     height: 450px;
@@ -495,9 +490,67 @@ table {
     width: 70%;
   }
 }
-img {
-  height: 100px;
-  width: 100px;
+@media only screen and (min-device-width: 1025px) {
+  .header__spot {
+    padding: 2%;
+  }
+  .header__text {
+    height: auto;
+  }
+
+  .working {
+    height: auto;
+  }
+  .working__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .working__list--puce {
+    width: 25%;
+  }
+
+  .nav {
+    height: auto;
+    padding: 30px 20px 50px 20px;
+  }
+
+  .nav-pannel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  .nav-pannel__card {
+    width: 28%;
+  }
+
+  .footer {
+    padding: 2% 0% 2% 6%;
+  }
+  .footer--link {
+    line-height: 2rem;
+  }
+  .footer h2 {
+    margin-bottom: 2%;
+  }
+
+  .menu-header {
+    height: 300px;
+  }
+  .menu-header__viewmenu {
+    height: 270px;
+  }
+
+  .menu__pannel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu__3-course {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
