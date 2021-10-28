@@ -100,9 +100,10 @@
 
             &--info {
                 display: flex;
-                flex-wrap: wrap;
                 height: 70px;
+                width: 100%;
                 background-color: white;
+                position: relative;
                 color: black;
                 border-bottom-left-radius: 15px;
                 border-bottom-right-radius: 15px;
@@ -115,15 +116,43 @@
                     line-height: 1.5rem;
                 }
 
+             
                 i {
+                    position: absolute;
+                    right: 2px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 20%;
-                    height: 90%;
+                    margin: 24px;      
                     font-size: 110%;
-                    color:#837b7b ;
+                }
+
+                .heart_empty
+                {
+                    opacity: 1;
+                    color: gray;
+                }
+
+                .heart_full {
                     
+                    background: -webkit-linear-gradient(0deg, $colour-primary, $colour-secondary);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    opacity: 0;
+                    transform: scale(0);
+                    transition-duration: 300ms;
+                }
+                
+                .fav_heart:hover {
+                    
+                    .heart_full{
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+
+                    .heart_empty {
+                        opacity: 0;
+                    }
                 }
             }
         }

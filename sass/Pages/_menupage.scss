@@ -18,6 +18,7 @@
         justify-content: space-between;
         padding-right: 20px;
         padding-bottom: 30px;
+        position: relative;
 
         &--title {
             font-family: 'Shrikhand', cursive;
@@ -27,9 +28,55 @@
         &--fav {
             font-size: 110%; 
             text-align: center;
+            position: absolute;
+            right: 20px;
             padding-top: 2.5px;
             color: rgba(128, 128, 128, 0.719);
+            opacity: 1;
+            transition-duration: 300ms;
         }
+
+        &--fav-full {
+            font-size: 110%; 
+            text-align: center;
+            position: absolute;
+            right: 20px;
+            padding-top: 2.5px;
+            background: -webkit-linear-gradient(0deg, $colour-primary, $colour-secondary);
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 1;
+            transform: scale(0);
+            transition-duration: 300ms;
+            
+        }
+
+        .menu-fav-heart:active {
+                
+
+            .menu__title--fav-full{
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            .menu__title--fav {
+                opacity: 0;
+            }
+        }
+
+        .menu-fav-heart::after {
+            content: "";
+
+            .menu__title--fav-full{
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            .menu__title--fav {
+                opacity: 0;
+            }
+        }
+
     }
 
     &__3-course {
@@ -48,14 +95,19 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            position: relative;
             margin-top: 15px;
-            padding: 12px;
             line-height: 25px;
             width: 100%;
             height: 70px;
+            padding: 12px;
             border-radius: 15px;
             box-shadow: 1px 1px 20px rgb(0 0 0 /25%);
-
+            animation: reveal 1s ease-in-out;
+            animation-fill-mode: forwards;
+            transform: scale(0);
+            overflow: hidden;
+            
                 strong {
                     font-weight: bold;
                 } 
@@ -67,9 +119,73 @@
                     white-space: nowrap;
                     width: 85%;
                 }
-        }
-    }
 
+                
+        }
+
+        &--confirmation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px -93px -12px 10px;
+            background: $colour-tertiary;
+            width: 80px;
+            height: 70px;
+            overflow: hidden;
+            
+            i {
+                font-size: 25px;
+                color: white;
+            }
+        }
+
+        &--info:hover {
+            .menu__3-course--confirmation {
+                animation: slide-left .5s ease-in-out both;
+                i {
+                    animation: rotate 0.5s ease-in-out both;
+                
+                }
+            }
+
+            
+        }
+
+        .menu_delay-1 {
+            animation-delay: 0.1s;
+        }
+        .menu_delay-2 {
+            animation-delay: 0.3s;
+        }
+        .menu_delay-3 {
+            animation-delay: 0.5s;
+        }
+
+        .menu_delay-4 {
+            animation-delay: 0.7s;
+        }
+        .menu_delay-5 {
+            animation-delay: 0.9s;
+        }
+        .menu_delay-6 {
+            animation-delay: 1.1s;
+        }
+
+        .menu_delay-7 {
+            animation-delay: 1.3s;
+        }
+        .menu_delay-8 {
+            animation-delay: 1.5s;
+        }
+        .menu_delay-9 {
+            animation-delay: 1.7s;
+        }
+        .menu_delay-10 {
+            animation-delay: 1.9s;
+        }
+
+    }
+    
     &__btn {
         text-align: center;
         padding: 40px 0px 80px 0px;
@@ -78,6 +194,11 @@
             color: white;
             padding: 15px 40px;
             border-radius: 40px;
+        }
+
+        a:hover {
+            filter: brightness(1.10);
+            box-shadow: 0px 2px 5px rgb(0 0 0 /50%);
         }
     }
 }
