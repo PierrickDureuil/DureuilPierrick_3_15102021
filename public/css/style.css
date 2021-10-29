@@ -263,6 +263,7 @@ table {
 }
 .nav-pannel__card--view {
   height: 180px;
+  position: relative;
 }
 .nav-pannel__card--view img {
   height: 180px;
@@ -271,6 +272,17 @@ table {
   object-position: center bottom;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.nav-pannel__card--view .bloc_new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #99e2D0;
+  color: #008766;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  padding: 8px 12px 8px 12px;
 }
 .nav-pannel__card--view #view_adjustment_menu2 {
   object-position: 50% 60%;
