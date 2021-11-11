@@ -510,8 +510,7 @@ table {
   }
   .working__list {
     box-sizing: border-box;
-    align-items: flex-start;
-    margin-left: 80px;
+    align-items: center;
   }
   .working__list--puce {
     width: 380px;
